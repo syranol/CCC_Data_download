@@ -45,8 +45,8 @@ export_button.click()
 time.sleep(10)
 
 # Now loop through the rest of 119 schools (We downloaded first one already)
-schools = 119
-for i in range(schools):
+schools = 120
+for i in range(1,schools+1):
 
     wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="selectionContainer"]/div/div[2]/span/span[1]/span')))
     college_box = driver.find_element(By.XPATH, '//*[@id="selectionContainer"]/div/div[2]/span/span[1]/span')
